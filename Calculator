@@ -1,0 +1,41 @@
+public class SimpleCalculator {
+
+   
+    public static Double add(Double a, Double b) {
+        return a + b;
+    }
+
+    
+    public static Double subtract(Double a, Double b) {
+        return a - b;
+    }
+
+    
+    public static Double multiply(Double a, Double b) {
+        return a * b;
+    }
+
+    
+    public static Double divide(Double a, Double b) {
+        if (b != 0) {
+            return a / b;
+        } else {
+            System.debug('Error: Division by zero!');
+            return null;
+        }
+    }
+
+    
+    public static void runCalculator() {
+        Double num1 = 15;
+        Double num2 = 5;
+
+        System.debug('Addition: ' + add(num1, num2));
+        System.debug('Subtraction: ' + subtract(num1, num2));
+        System.debug('Multiplication: ' + multiply(num1, num2));
+        System.debug('Division: ' + divide(num1, num2));
+    }
+}
+
+
+#Run program using => SimpleCalculator.runCalculator();
